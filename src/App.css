@@ -1,38 +1,80 @@
+body {
+  color: rgb(17, 17, 17);
+  max-height: 100vh;
+  background-image: url(./Images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .App {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(216, 210, 210, 0.2));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem;
   text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 20px rgb(48, 20, 20);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1{
+  font-family: cursive;
+  font-size: 2.5rem;
+  text-shadow: 0px 20px 30px rgb(252, 252, 252);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 2rem;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+ #search-bar:hover, #search-btn:hover{
+   box-shadow: 0px 5px 15px #000;
+ }
+.weather-status h1 {
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.city h1{
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.temperature-section h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7.5rem;
+}
+
+.min-max-temp{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:1000px){
+  body {
+    max-height: 100vh;
+    background-image: url(./Images/bg.jpg);
+    background-position:cover;
+    background-size:300%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width:800px){
+  .App{
+    width: 90%;
   }
+
+  .weather-form {
+    width: 115%;
+  }
+  
+  .weather-status h1 {
+    font-weight: 500;
+  }
+ 
 }
