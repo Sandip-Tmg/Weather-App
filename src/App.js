@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import './App.css';
-import API_KEY from './data/config';
+import API_KEY from '../build/data/config';
 
 const App = ()=>{
 
